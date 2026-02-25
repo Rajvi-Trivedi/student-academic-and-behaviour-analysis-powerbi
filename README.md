@@ -1,98 +1,120 @@
-# 📊 Student Academic and Behaviour Analysis – Power BI Dashboard
+# Student Academic & Behavioral Analysis – Power BI Dashboard
 
 ## Project Overview
 
-This project focuses on analyzing **student academic performance and behavioral patterns** using Microsoft Power BI.
-The dashboard provides a consolidated view of scores, attendance, and behavior data to help identify performance trends, areas of improvement, and overall student outcomes.
+This project analyzes student academic performance, attendance patterns, and behavioral trends using Microsoft Power BI.
 
-The solution emphasizes **data modeling, DAX calculations, interactive visualizations, and storytelling**.
+The dashboard consolidates multi-source data into an interactive analytical solution that helps identify performance gaps, subject-level strengths and weaknesses, and the relationship between attendance, behavior, and academic outcomes.
+
+The project demonstrates strong capabilities in **data modeling, DAX calculations, dashboard design, and insight generation**.
 
 ---
 
 ## Dataset Description
 
-The project uses multiple datasets sourced from Google Sheets / Excel:
+The solution integrates multiple structured datasets sourced from Google Sheets / Excel:
 
-* **Students** – Student demographic details (StudentID, Name, Class, Section, Gender)
-* **Scores** – Subject-wise exam scores, max scores, terms
-* **Attendance** – Attendance percentage and status by date
-* **Behavior** – Student behavior records and behavior types
+* **Students** – StudentID, Name, Class, Section, Gender
+* **Scores** – Subject-wise exam scores, maximum score, term
+* **Attendance** – Attendance percentage and daily status
+* **Behavior** – Categorized behavior records
 
-All datasets are connected using **StudentID** as the primary key.
+All datasets are relationally connected using **StudentID**.
 
 ---
 
 ## Data Modeling
 
-* A **star-schema–like model** was implemented
-* **Students** table acts as the dimension table
-* **Scores, Attendance, and Behavior** act as fact tables
-* One-to-many relationships were created from Students to all fact tables
-* Proper data types and cleaned column names were applied
+* Implemented a **star-schema data model**
+* Students table serves as the primary dimension table
+* Scores, Attendance, and Behavior function as fact tables
+* Established one-to-many relationships
+* Applied data cleaning:
+
+  * Standardized column naming
+  * Corrected data types
+  * Handled missing values
 
 ---
 
 ## Key DAX Measures
 
-The following measures were created using DAX:
+Developed dynamic DAX measures to support KPI tracking and segmentation:
 
 * Total Students
 * Total Score
 * Total Max Score
-* % Score
 * Average Score
+* Percentage Score
 * Attendance %
 * Behavior Count
-* Performance Category (High / Medium / Low using SWITCH)
+* Performance Category (High / Medium / Low using SWITCH logic)
 
-These measures support dynamic filtering and interactivity across visuals.
+All measures dynamically respond to slicer selections.
 
 ---
 
-## Dashboard Visualizations
+## Dashboard Components
 
-The dashboard includes:
+### KPI Indicators
 
-* **KPI Cards**: Total Students, % Score, Avg Score, Attendance %, Performance Category
-* **Bar Chart**: Average Score by Subject and Class
-* **Line Chart**: Performance Trend by Term
-* **Donut Chart**: Student Behavior Distribution
-* **Table**: Student-wise performance with conditional formatting
-* **Slicers**: Class, Section, Subject, Term for interactive analysis
+* Total Students
+* Average Score
+* Percentage Score
+* Attendance %
+* Performance Category
 
-Conditional formatting highlights high and low performers for quick insights.
+### Visualizations
+
+* **Bar Chart** – Average Score by Subject and Class
+* **Line Chart** – Term-wise Performance Trend
+* **Donut Chart** – Behavior Distribution
+* **Performance Table** – Student-level analysis with conditional formatting
+
+### Interactivity
+
+* Slicers: Class, Section, Subject, Term
+* Dynamic cross-filtering
+* Conditional formatting to highlight performance categories
 
 ---
 
 ## Key Insights
 
-* Higher attendance generally correlates with better academic performance
-* Certain subjects show lower average scores and may need intervention
-* Medium-performing students exhibit higher behavioral incidents
-* Performance trends vary across academic terms
+* Strong positive correlation observed between attendance and academic performance
+* Certain subjects consistently show lower scoring averages
+* Medium-performing students display higher behavioral variability
+* Academic trends fluctuate across terms
 
 ---
 
-## Tools & Technologies Used
+## Tools & Technologies
 
 * Microsoft Power BI Desktop
 * DAX (Data Analysis Expressions)
-* Google Sheets / Excel
-* Data Modeling & Visualization Techniques
+* Excel / Google Sheets
+* Data Modeling (Star Schema)
 
 ---
 
 ## Deliverables
 
-* **Student_performance_dashboard.pbix**
-* README documentation (this file)
+* Student_Performance_Dashboard.pbix
+* Project documentation
 
 ---
 
 ## Conclusion
 
-This dashboard demonstrates end-to-end Power BI capabilities, including data preparation, modeling, DAX calculations, visualization, and interactive reporting.
-It provides actionable insights into student performance and behavior in a clear and professional manner.
+This project showcases the ability to transform raw educational data into a structured analytical model and interactive dashboard.
+
+It reflects practical expertise in data modeling, KPI development, and insight-driven reporting — aligned with real-world Business Intelligence use cases.
 
 ---
 
+## Author
+
+Rajvi Trivedi
+Data Analyst | Business Analyst
+
+---
